@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- inicio etiquetas meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cierre etiquetas meta -->
+
+    <!-- inicio etiquetas tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- cierre etiquetas tipografia -->
+
+    <link rel="stylesheet" href="./estilos/style.css">
+    <!-- titulo de nuestro html -->
+    <title>Home - Birroteca</title>
+</head>
+<body>
+    <!-- encabezado: header -->
+    <header class="encabezado">
+        <h1 class="tituloPrincipal">Birroteca </h1>
+        <!-- etiqueta de menu/navegacion-->
+        <nav class="navegacion">
+            <!-- lista desordenada-->
+            <ul>
+                <li>  
+                    <a href="/index.html"> Home </a>
+                </li>
+                <li>  
+                    <a href="./pages/nosotros.html"> Nosotros </a>
+                </li>
+                <li>  
+                    <a href="./pages/productos.html"> Productos </a>
+                </li>
+                <li>  
+                    <a href="./pages/empresariales.html"> Empresariales </a>
+                </li>
+                <li>  
+                    <a href="./pages/contacto.html"> Contacto </a>
+                </li>
+                <li class="menuHamburgesa">  
+                    <img src="./img/icon-menu.png" alt="">
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- contenido principal: main -->
+    <main class="container">
+        <!-- seccion de imagen de bienvenida-->
+        <img src="img/home-foto-inicial.png" alt="foto-home"  class="fotoInicial">
+        
+        <!-- seccion de catalogo de servicios  - USAR OTRAS ETIQUETAS CUANDO LAS VEAMOS-->
+        <h2 class="tituloSeccionServicios">Nuestros Servicios</h2>
+        <section class="seccionServicios">
+            <div>
+                <img src="img/icon-camion-de-envio.png" alt="icon-envio" class="img">
+                <p>Envios a todo el pais</p>
+                <p>Calcula el costo</p>
+            </div>
+            <div>
+                <img src="img/icon-telefono.png" alt="icon-telefono" class="img" >
+                <p>Contactate </p>
+                <p>Resolvemos tus dudas </p>
+            </div>
+            <div>
+                <img src="img/icon-pago.png" alt="icon-tarjeta" class="img">
+                <p>Como pago? </p>  
+                <p>Mercado pago o transferencia</p>  
+            </div> 
+        </section>
+              
+        <!-- seccion de ubicacion-->
+        <h2 class="tituloSeccionUbicacion">Nuestra ubicación</h2>
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16225.266244342718!2d-61.47781181063604!3d-31.250027364364122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1640133848963!5m2!1ses!2sar"  allowfullscreen="" loading="lazy"></iframe>
+    </main>
+    
+    <!-- pie de pagina: footer -->
+    <footer class="piePagina">
+        <p>Birroteca</p>
+        <p>Av. Santa Fe 2000</p>
+        <p>Rafaela, Satan Fe</p>
+    </footer>
+
+</body>
+</html>

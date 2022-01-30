@@ -1,0 +1,1451 @@
+/*
+    mis colores
+        amarillos: #fffaa8
+        gris: #4e4c534d
+*/
+
+/*-------------------------------------------------------------------
+ ESTILO A ETIQUETAS GLOBALES
+ --------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.tituloPrincipal{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navegacion{
+    display: inline-block;
+    z-index: 100;
+}
+
+.encabezado{
+    position: sticky;
+    padding: 4px 8px;
+    top: 0px;
+    background-color: #fffaa8;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+a{
+    text-decoration: none;
+    padding-right: 8px;
+    margin-left: 8px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.piePagina{
+    position: sticky;
+    padding: 4px;
+    bottom: 0px;
+    background-color: #fffaa8;
+}
+.piePagina p{
+    font-size: 10px;
+    text-align: center;
+    padding: 2px;
+}
+
+a:hover{
+    font-weight: bold;
+    color: #fffaa8;
+    background-color: black;
+    padding: 4px;
+    border-radius: 20px;
+}
+
+.menuHamburgesa{
+    display: none;
+}
+
+.menuHamburgesa img{
+    width: 16px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+
+    li{
+        display: none;
+    }
+
+    .menuHamburgesa{
+        display: inline-block;
+    }
+}
+
+/*-------------------------------------------------------------------
+ ESTILO HOME - INDEX
+ --------------------------------------------------------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 40px 200px 40px 300px ;
+    grid-row-gap: 16px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:"fotoInicial fotoInicial fotoInicial"
+                        "tituloServicios tituloServicios tituloServicios"
+                        "seccionServicios seccionServicios seccionServicios"
+                        "tituloUbicacion tituloUbicacion tituloUbicacion"
+                        "mapa mapa mapa";
+}
+
+.fotoInicial{
+    grid-area: fotoInicial;
+    max-height: 500px;
+    width: 100%;
+}
+
+.tituloSeccionServicios{
+    grid-area: tituloServicios;
+    text-align: center;
+}
+
+.seccionServicios{
+    grid-area: seccionServicios;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.img{
+    width: 120px;
+    margin-bottom: 8px;
+}
+
+
+.tituloSeccionUbicacion{
+    grid-area: tituloUbicacion ;
+    text-align: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    border: none;
+}
+
+
+h2{
+    animation-name: reflejar;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+@keyframes reflejar {
+    10%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+        color: #fffaa8
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+
+@media (max-width: 768px) {
+   
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 40px 600px 40px auto ;
+        grid-row-gap: 16px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"fotoInicial "
+                            "tituloServicios "
+                            "seccionServicios" 
+                            "tituloUbicacion"
+                            "mapa";
+    }
+
+    .fotoInicial{
+        grid-area: fotoInicial;
+        max-height: 500px;
+        width: 100%;
+    }
+    
+    .tituloSeccionServicios{
+        grid-area: tituloServicios;
+        text-align: center;
+    }
+    
+    .seccionServicios{
+        grid-area: seccionServicios;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        text-align: center;
+    }
+    
+    .img{
+        width: 120px;
+        margin-bottom: 8px;
+    }
+    
+    .tituloSeccionUbicacion{
+        grid-area: tituloUbicacion ;
+        text-align: center;
+    }
+    
+    .mapa{
+        grid-area: mapa;
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1f;
+        grid-template-rows: auto 40px 600px 40px auto ;
+        grid-template-areas:"fotoInicial"
+                            "tituloServicios"
+                            "seccionServicios" 
+                            "tituloUbicacion"
+                            "mapa";
+    }
+
+    .fotoInicial{
+        grid-area: fotoInicial;
+        max-height: 500px;
+        width: 100%;
+        display: none;
+    }
+    
+    .tituloSeccionServicios{
+        grid-area: tituloServicios;
+        text-align: center;
+    }
+    
+    .seccionServicios{
+        grid-area: seccionServicios;
+        width: 100%;
+        text-align: center;
+    }
+
+    section div{
+        background-color: #4e4c534d;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 10px;
+        width: 100%;
+    }   
+
+    .img{
+        width: 120px;
+        margin-bottom: 8px;
+    }
+    
+    
+    .tituloSeccionUbicacion{
+        grid-area: tituloUbicacion ;
+        text-align: center;
+    }
+    
+    .mapa{
+        grid-area: mapa;
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
+        border: none;
+    }
+}
+
+/*-------------------------------------------------------------------
+ ESTILO PAGE NOSOTROS
+ --------------------------------------------------------------------*/
+
+.containerNosotros{
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 40px 150px 40px auto 40px auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px ;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
+                        "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
+                        "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
+                        "tituloMulti tituloMulti tituloMulti tituloMulti" 
+                        "video1 video1 video2 video2"
+                        "tituloProv tituloProv tituloProv tituloProv"
+                        "proveedor1 proveedor2 proveedor3 proveedor4";
+}
+
+.fotoInicialNos{
+    grid-area: fotoInicialNos;
+    max-height: 500px;
+    width: 100%;
+    border: none;
+}
+
+.tituloNosotros{
+    grid-area: tituloNosotros;
+    text-align: center;
+}
+
+.descripcionNosotros{
+    grid-area: descripcionNosotros;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.tituloMulti{
+    grid-area: tituloMulti;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.video1{
+    grid-area: video1;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+.video2{
+    grid-area: video2;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+.tituloProv{
+    grid-area: tituloProv;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.proveedor1{
+    grid-area: proveedor1;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor2{
+    grid-area: proveedor2;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor3{
+    grid-area: proveedor3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.proveedor4{
+    grid-area: proveedor4;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.imgProveedor{
+    width: 150px;
+    height: 100px;
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.btnCatalogo{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btnCatalogo:hover{
+    background-color: #fffaa8;
+}
+
+@media (max-width: 768px) {
+    .containerNosotros{
+        display: grid;
+        margin-bottom: 16px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto 40px 150px 40px auto auto 40px auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px ;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"fotoInicialNos fotoInicialNos fotoInicialNos fotoInicialNos"
+                            "tituloNosotros tituloNosotros tituloNosotros tituloNosotros"
+                            "descripcionNosotros descripcionNosotros descripcionNosotros descripcionNosotros"
+                            "tituloMulti tituloMulti tituloMulti tituloMulti" 
+                            " . video1 video1 . "
+                            " . video2 video2 . "
+                            "tituloProv tituloProv tituloProv tituloProv"
+                            " . proveedor1 proveedor2 . " 
+                            " . proveedor3 proveedor4 . ";
+    }
+    
+    .fotoInicialNos{
+        grid-area: fotoInicialNos;
+        max-height: 500px;
+        width: 100%;
+        border: none;
+    }
+    
+    .tituloNosotros{
+        grid-area: tituloNosotros;
+        text-align: center;
+    }
+    
+    .descripcionNosotros{
+        grid-area: descripcionNosotros;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 12px;
+    }
+    
+    .tituloMulti{
+        grid-area: tituloMulti;
+        text-align: center;
+    }
+    
+    .video1{
+        grid-area: video1;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .video2{
+        grid-area: video2;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .tituloProv{
+        grid-area: tituloProv;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .proveedor1{
+        grid-area: proveedor1;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor2{
+        grid-area: proveedor2;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor3{
+        grid-area: proveedor3;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .proveedor4{
+        grid-area: proveedor4;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .imgProveedor{
+        width: 150px;
+        height: 100px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    
+    .btnCatalogo{
+        background-color: white;
+        border: none;
+        font-weight: bold;
+    }
+    
+    .btnCatalogo:hover{
+        background-color: #fffaa8;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerNosotros{
+        display: grid;
+        margin-bottom: 16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px ;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"fotoInicialNos"
+                            "tituloNosotros"
+                            "descripcionNosotros "
+                            "tituloMulti " 
+                            "video1 "
+                            "video2 "
+                            "tituloProv"
+                            "proveedor1 " 
+                            "proveedor2"
+                            "proveedor3" 
+                            "proveedor4" ;
+    }
+    
+    .fotoInicialNos{
+        grid-area: fotoInicialNos;
+        max-height: 500px;
+        width: 100%;
+        border: none;
+        display: none;
+    }
+    
+    .tituloNosotros{
+        grid-area: tituloNosotros;
+        text-align: center;
+    }
+    
+    .descripcionNosotros{
+        grid-area: descripcionNosotros;
+        margin-right: 16px;
+        margin-left: 16px;
+        font-size: 10px;
+    }
+    
+    .tituloMulti{
+        grid-area: tituloMulti;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .video1{
+        grid-area: video1;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .video2{
+        grid-area: video2;
+        border: none;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .tituloProv{
+        grid-area: tituloProv;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .proveedor1{
+        grid-area: proveedor1;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor2{
+        grid-area: proveedor2;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor3{
+        grid-area: proveedor3;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid black;
+    }
+    
+    .proveedor4{
+        grid-area: proveedor4;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding: 4px;
+    }
+    
+    .imgProveedor{
+        width: 150px;
+        height: 100px;
+        margin-bottom: 16px;
+        margin-top: 8px;
+    }
+    
+    .btnCatalogo{
+        background-color: white;
+        border: none;
+        font-weight: bold;
+    }
+    
+    .btnCatalogo:hover{
+        background-color: #fffaa8;
+    }
+   
+}
+
+
+/*-------------------------------------------------------------------
+ ESTILO PAGE PRODUCTOS
+ --------------------------------------------------------------------*/
+
+
+.contenidoProductos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px 16px;
+    grid-template-areas: "tituloBotella"
+                        "listadoBotella"
+                        "tituloLatas"
+                        "listadoLatas"
+                        "tituloPromociones"
+                        "listadoPromociones";
+    justify-content: center;
+    align-content: center;
+}
+
+.tituloBotella{
+    grid-area: tituloBotella;
+    background-color: #4e4c534d;
+    padding: 16px;
+    text-align: center;
+}
+.listadoBotella{
+    grid-area: listadoBotella;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px 16px;
+    grid-template-areas: "";
+    justify-content:space-between;
+    align-content: center;
+}
+.tituloLatas{
+    grid-area: tituloLatas;
+    background-color: #4e4c534d;
+    padding: 16px;
+    text-align: center;
+}
+.listadoLatas{
+    grid-area: listadoLatas;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px 16px;
+    grid-template-areas: "";
+    justify-content:space-between;
+    align-content: center;
+}
+.tituloPromociones{
+    grid-area: tituloPromociones;
+    background-color: #4e4c534d;
+    padding: 16px;
+    text-align: center;
+}
+.listadoPromociones{
+    grid-area: listadoPromociones;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 16px 16px;
+    grid-template-areas: "";
+    justify-content:space-between;
+    align-content: center;
+}
+
+.cuadroConTituloSeccion{
+    background-color: #4e4c534d;
+    padding: 16px;
+    text-align: center;
+}
+
+.contenidoProductos{
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+.listadoProductos{
+    margin: 16px 0px; 
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.prod{
+    width: 160px;
+    max-width: 250px;
+    border: 1px solid #aaa ;
+}
+
+.imgProducto{
+    width: 160px;
+    height: 160px;
+}
+
+.footerProducto{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4px; 
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+
+.btn-shop{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.imgCarrito{
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 20px;
+}
+
+.imgCarrito:hover{
+    background-color: #fffaa8;
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .contenidoProductos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "tituloBotella"
+                            "listadoBotella"
+                            "tituloLatas"
+                            "listadoLatas"
+                            "tituloPromociones"
+                            "listadoPromociones";
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .tituloBotella{
+        grid-area: tituloBotella;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoBotella{
+        grid-area: listadoBotella;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    .tituloLatas{
+        grid-area: tituloLatas;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoLatas{
+        grid-area: listadoLatas;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    .tituloPromociones{
+        grid-area: tituloPromociones;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoPromociones{
+        grid-area: listadoPromociones;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    
+    .cuadroConTituloSeccion{
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    
+    .contenidoProductos{
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    
+    .listadoProductos{
+        margin: 16px 0px; 
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    
+    .prod{
+        width: 160px;
+        max-width: 250px;
+        border: 1px solid #aaa ;
+    }
+    
+    .imgProducto{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .footerProducto{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 4px; 
+        padding-left: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .btn-shop{
+        border: none;
+        cursor: pointer;
+        background-color: white;
+    }
+    
+    .imgCarrito{
+        padding: 4px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 20px;
+    }
+    
+    .imgCarrito:hover{
+        background-color: #fffaa8;
+        padding: 4px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .contenidoProductos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "tituloBotella"
+                            "listadoBotella"
+                            "tituloLatas"
+                            "listadoLatas"
+                            "tituloPromociones"
+                            "listadoPromociones";
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .tituloBotella{
+        grid-area: tituloBotella;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoBotella{
+        grid-area: listadoBotella;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    .tituloLatas{
+        grid-area: tituloLatas;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoLatas{
+        grid-area: listadoLatas;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    .tituloPromociones{
+        grid-area: tituloPromociones;
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    .listadoPromociones{
+        grid-area: listadoPromociones;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 16px 16px;
+        grid-template-areas: "";
+        justify-content:space-between;
+        align-content: center;
+    }
+    
+    .cuadroConTituloSeccion{
+        background-color: #4e4c534d;
+        padding: 16px;
+        text-align: center;
+    }
+    
+    .contenidoProductos{
+        padding-top: 16px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    
+    .listadoProductos{
+        margin: 16px 0px; 
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    
+    .prod{
+        width: 160px;
+        max-width: 250px;
+        border: 1px solid #aaa ;
+    }
+    
+    .imgProducto{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .footerProducto{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 4px; 
+        padding-left: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .btn-shop{
+        border: none;
+        cursor: pointer;
+        background-color: white;
+    }
+    
+    .imgCarrito{
+        padding: 4px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 20px;
+    }
+    
+    .imgCarrito:hover{
+        background-color: #fffaa8;
+        padding: 4px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: 20px;
+    }
+}
+
+/*-------------------------------------------------------------------
+ ESTILO PAGE EMPRESARIALES
+ --------------------------------------------------------------------*/
+
+ .containerPresentaciones{
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: "tituloPresentacion"
+                        "listadoProductos";
+}
+
+.tituloPresentacion{
+    grid-area: tituloPresentacion;
+    text-align: center;
+    background-color: #4e4c534d;
+    padding: 4px;
+}
+
+.listadoProductos{
+    grid-area: listadoProductos;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+.presentacion{
+    display: flex;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.footerPresentacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerPresentacion span{
+    font-weight: bold; 
+}
+
+.footerPresentacion p{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.footerPresentacion button{
+    border: none;
+    padding: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+
+.footerPresentacion button:hover{
+    background-color: #fffaa8 ;
+}
+
+@media (max-width: 768px) {
+    .containerPresentaciones{
+        margin-bottom: 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "tituloPresentacion"
+                            "listadoProductos";
+    }
+    
+    .tituloPresentacion{
+        grid-area: tituloPresentacion;
+        text-align: center;
+    }
+    
+    .listadoProductos{
+        grid-area: listadoProductos;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .presentacion{
+        display: flex;
+        padding: 8px;
+        border: 1px solid black;
+    }
+    
+    .footerPresentacion{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footerPresentacion span{
+        font-weight: bold; 
+    }
+    
+    .footerPresentacion p{
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .footerPresentacion button{
+        border: none;
+        padding: 4px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: white;
+    }
+    
+    .footerPresentacion button:hover{
+        background-color: #fffaa8 ;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerPresentaciones{
+        margin-bottom: 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: "tituloPresentacion"
+                            "listadoProductos";
+    }
+    
+    .tituloPresentacion{
+        grid-area: tituloPresentacion;
+        text-align: center;
+    }
+    
+    .listadoProductos{
+        grid-area: listadoProductos;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px;
+        border: 1px solid black;
+    }
+    
+    .footerPresentacion{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: start;
+        padding: 4px;
+    }
+    
+    .footerPresentacion span{
+        font-weight: bold;
+    }
+  
+    .footerPresentacion button{
+        margin: auto;
+        padding: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #fffaa8;
+        border: 1px solid black;
+    }
+    
+    .footerPresentacion button:hover{
+        background-color: #fffaa8 ;
+    }
+    
+}
+
+/*-------------------------------------------------------------------
+ ESTILO PAGE CONTACTANOS
+ --------------------------------------------------------------------*/
+
+.containerContacto{
+    margin-bottom: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px auto 40px auto auto auto ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: ". tituloContanos tituloContanos ."
+                            ". formulario formulario ."
+                            ". tituloEscribinos tituloEscribinos ." 
+                            ". cuadroWhats cuadroInstagram ."
+                            ". cuadroFace cuadroTwit .";
+    
+}
+
+.tituloContanos{
+    grid-area: tituloContanos;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.formulario{
+    grid-area: formulario;
+  
+}
+
+.tituloEscribinos{
+    grid-area: tituloEscribinos;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.cuadroWhats{
+    grid-area: cuadroWhats;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px dashed black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.cuadroInstagram{
+    grid-area: cuadroInstagram;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px dashed black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.cuadroFace{
+    grid-area: cuadroFace;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px dashed black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.cuadroTwit{
+    grid-area: cuadroTwit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px dashed black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.controlFormulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.controlFormulario div{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.containerContacto div img{
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .containerContacto{
+        margin-bottom: 16px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px auto 40px auto auto auto auto ;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        grid-template-areas:"tituloContanos"
+                            "formulario"
+                            "tituloEscribinos" 
+                            "cuadroWhats"
+                            "cuadroInstagram"
+                            "cuadroFace" 
+                            "cuadroTwit";
+    }
+    
+    .tituloContanos{
+        grid-area: tituloContanos;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .formulario{
+        grid-area: formulario;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    
+    .tituloEscribinos{
+        grid-area: tituloEscribinos;
+        text-align: center;
+        margin-top: 16px;
+    }
+    
+    .cuadroWhats{
+        grid-area: cuadroWhats;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-self: center;
+        border: none;
+        padding: 4px;
+    }
+    
+    .cuadroInstagram{
+        grid-area: cuadroInstagram;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-self: center;
+        border: none;
+        padding: 4px;
+    }
+    
+    .cuadroFace{
+        grid-area: cuadroFace;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-self: center;
+        border: none;
+        padding: 4px;
+    }
+    
+    .cuadroTwit{
+        grid-area: cuadroTwit;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-self: center;
+        border: none;
+        padding: 4px;
+    }
+    
+    .controlFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .controlFormulario div{
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+    }
+    
+    .containerContacto div img{
+        width: 24px;
+        margin-bottom: 16px;
+        margin: auto;
+        border-radius: 30px;
+        margin-right: 16px;
+    }
+}
+
+.moverCuadro{
+    animation-name: mover;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes mover {
+    from{
+      border: 1px dotted black;
+      border-radius: 20px;
+    }
+    to{
+        border: 1px dashed black;
+    }
+}

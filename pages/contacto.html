@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- inicio etiquetas tipografia -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <!-- cierre etiquetas tipografia -->
+    <link rel="stylesheet" href="./../estilos/style.css">
+    <title>Contacto - Birroteca</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="tituloPrincipal">Birroteca</h1>
+        <!-- etiqueta de menu/navegacion-->
+        <nav class="navegacion">
+            <!-- lista desordenada-->
+            <ul>
+                <li>  
+                    <a href="./../index.html"> Home </a>
+                </li>
+                <li>  
+                    <a href="./nosotros.html"> Nosotros </a>
+                </li>
+                <li>  
+                    <a href="./productos.html"> Productos </a>
+                </li>
+                <li>  
+                    <a href="./empresariales.html"> Empresariales </a>
+                </li>
+                <li>  
+                    <a href="./contacto.html"> Contacto </a>
+                </li>
+                <li class="menuHamburgesa">  
+                    <img src="./../img/icon-menu.png" alt="">
+                </li>
+            </ul>
+        </nav> 
+    </header>
+
+     <!-- contenido principal: main -->
+     <main class="containerContacto">
+        <!-- seccion de formulario-->
+            <h2 class="tituloContanos">CONTACTANOS..</h2>
+            <!-- crear nuestro formulario-->
+            <form class="formulario">
+                <fieldset class="controlFormulario">
+                    <div>
+                        <label for="nombre"> Nombre y Apellido: </label>
+                        <input type="text" name="nombre" placeholder="complete nombre y apellido">
+                    </div>
+                    <div>
+                        <label for="email"> Email: </label>
+                        <input type="email" name="email" placeholder="complete email" required>
+                    </div>               
+                    <div>
+                        <label for="provincia"> Provincia </label>
+                        <select name="provincia">
+                            <option value="santa fe">Santa Fe</option>
+                            <option value="cordoba">Cordoba</option>
+                            <option value="buenos aires">Buenos Aires</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="localidad"> Localidad </label>
+                        <select name="localidad">
+                            <option value="rafaela">Rafaela</option>
+                            <option value="rosario">Rosario</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="texto"> Escriba aqui.. </label>
+                        <textarea for="texto" name="texto" required>
+    
+                        </textarea>  
+                    </div>
+                    <div>
+                        <input type="submit" value="ENVIAR" style="background-color: #4e4c534d; border: 1px solid #4e4c534d;">
+                    </div>
+                </fieldset>
+            </form>
+        
+        <!-- seccion de informacion de contacto -->
+            <h2 class="tituloEscribinos">ESCRIBINOS..</h2>
+            <div class="cuadroWhats moverCuadro">
+                <img src="./../img/icon-whats.png" alt="">
+                <span>123456789</span>
+            </div>
+            <div class="cuadroInstagram moverCuadro">
+                <img src="./../img/icon-inst.png" alt="">
+                <span>birroteca@2022</span>
+            </div>
+            <div class="cuadroFace moverCuadro">
+                <img src="./../img/icon-face.png" alt="">
+                <span>birroteca@2022</span>
+            </div> 
+            <div class="cuadroTwit moverCuadro">
+                <img src="./../img/icon-twit.png" alt="">
+                <span>birroteca@2022</span>
+            </div>  
+    </main>
+
+    <!-- pie de pagina: footer -->
+    <footer class="piePagina">
+        <p>Birroteca</p>
+        <p>Av. Santa Fe 2000</p>
+        <p>Rafaela, Satan Fe</p>
+    </footer>
+</body>
+</html>

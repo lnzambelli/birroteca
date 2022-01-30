@@ -1,0 +1,175 @@
+<!-- contenido principal: main -->
+     <main class="contenidoProductos">
+
+        <!-- contenido de productos envasados en botella -->
+         <section class="seccionProductos">
+            <h2 class="cuadroConTituloSeccion">BOTELLAS</h2>
+            <div class="listadoProductos">
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+        <!-- contenido de productos envasados en latas -->
+         <section class="seccionProductos">
+           <h2 class="cuadroConTituloSeccion">LATAS</h2>
+           <div class="listadoProductos">
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <!-- contenido de productos en promocion -->
+        <section class="seccionProductos">
+            <h3 class="cuadroConTituloSeccion">PROMOCIONES</h3>
+            <div class="listadoProductos">
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
+                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$200</span>
+                        <button class="btn-shop">
+                            🛒
+                        </button>
+                    </div>
+                </div>
+            </div>
+         </section>
+       
+    </main>

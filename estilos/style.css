@@ -88,6 +88,23 @@ a:hover{
     }
 }
 
+
+.tituloMaquinaEstilo{
+    display: block;
+    white-space: nowrap;
+    animation: typing 2s steps(12), blinker .5s infinite step-end alternate;
+    overflow: hidden;
+    width: 12ch;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blinker{
+    50% {border-color: transparent;}
+}
+
 /*-------------------------------------------------------------------
  ESTILO HOME - INDEX
  --------------------------------------------------------------------*/

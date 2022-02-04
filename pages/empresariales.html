@@ -9,104 +9,99 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
      <!-- cierre etiquetas tipografia -->
-    <link rel="stylesheet" href="./../estilos/style.css">
+    <!-- link de css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="./../estilos/style.css">
     <title>Empresariales - Birroteca</title>
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="tituloPrincipal tituloMaquinaEstilo">Birroteca</h1>
-        <!-- etiqueta de menu/navegacion-->
-        <nav class="navegacion">
-            <!-- lista desordenada-->
-            <ul>
-                <li>  
-                    <a href="./../index.html"> Home </a>
-                </li>
-                <li>  
-                    <a href="./nosotros.html"> Nosotros </a>
-                </li>
-                <li>  
-                    <a href="./productos.html"> Productos </a>
-                </li>
-                <li>  
-                    <a href="./empresariales.html"> Empresariales </a>
-                </li>
-                <li>  
-                    <a href="./contacto.html"> Contacto </a>
-                </li>
-                <li class="menuHamburgesa">  
-                    <img src="./../img/icon-menu.png" alt="">
-                </li>
-            </ul>
-        </nav>   
+    <!-- encabezado: header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light colorPrincipalFondo d-flex justify-content-beetwen ">
+            <div class="container-fluid d-flex justify-content-beetwen">
+              <h1 class="navbar-brand">Birroteca</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav w-100 d-flex justify-content-end">
+                    <a class="nav-link activate" href="../index.html" aria-current="page">Home</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    <a class="nav-link" href="./empresariales.html">Empresariales</a>
+                    <a class="nav-link" href="./contacto.html">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
      <!-- contenido principal: main -->
      <main class="containerPresentaciones">
         <h2 class="tituloPresentacion">NUESTRAS PRESENTACIONES</h2>
         <div class="listadoProductos">
             <div class=" presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion">
-                    <span>Combo nº 1 - $200</span>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_953216-MLA48765833522_012022-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion px-4">
+                    <span>Combo nº 1 - $2200</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* 1 Caja Maletín</p>
+                    <p>* 1 Cerveza Corona 710ml</p>
+                    <p>* 2 Copas de Vidrio Corona 330ml</p>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="presentacion2 presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion">
-                    <span>Combo nº 1 - $200</span>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_694262-MLA48593613121_122021-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion px-4">
+                    <span>Combo nº 2 - $4000</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* Estuche decorativo</p>
+                    <p>* 2 latas y 3 botellas </p>
+                    <p>* Jarro cervecero de vidrio</p>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="presentacion3 presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion ">
-                    <span>Combo nº 1 - $200</span>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_922071-MLA48765601919_012022-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion  px-4">
+                    <span>Combo nº 3 - $2200</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* 1 Caja Maletín</p>
+                    <p>* 1 Cerveza Patagonia Amber Lager 710ml</p>
+                    <p>* 2 Copas de Vidrio Corona 330ml</p>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="presentacion4 presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion ">
-                    <span>Combo nº 1 - $200</span>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_972951-MLA46967172548_082021-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion  px-4">
+                    <span>Combo nº 4 - $1500</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* Estuche contenedor</p>
+                    <p>* 4 botellas cerveza Antares Ipa e Ipa session (caravana)</p>
+                    <p>* Destapador con logo Birroteca</p>
                     <button>Reservar</button>
                 </div>
             </div>
             <div class="presentacion5 presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion ">
-                    <span>Combo nº 1 - $200</span>
+                <img src="https://http2.mlstatic.com/D_NQ_NP_718091-MLA48098334081_112021-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion  px-4">
+                    <span>Combo nº 5 - $1600</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* Estuche contenedor</p>
+                    <p>* 2 vasos cerveceros Andes</p>
+                    <p>* Destapador de cervezas</p>
                     <button>Reservar</button>
                 </div>
             </div>
-            <div class="presentacion6 presentacion">
-                <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                <div class="footerPresentacion">
-                    <span>Combo nº 1 - $200</span>
+            <div class="presentacion6 presentacion ">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_781295-MLA47261720608_082021-V.webp" alt="corona" class="imgProducto">
+                <div class="footerPresentacion  px-4 ">
+                    <span>Combo nº 6 - $1400</span>
                     <p>Contenido:</p>
-                    <p>*</p>
-                    <p>*</p>
-                    <p>*</p>
+                    <p>* Caja diseño</p>
+                    <p>* 3 botellas de cervezas Me Hecho la Burra</p>
+                    <p>* 1 vaso vidrio large</p>
                     <button>Reservar</button>
                 </div>
             </div>
@@ -119,5 +114,8 @@
         <p>Av. Santa Fe 2000</p>
         <p>Rafaela, Satan Fe</p>
     </footer>
+
+    <!-- link de css bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

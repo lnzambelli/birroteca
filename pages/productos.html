@@ -9,36 +9,31 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
      <!-- cierre etiquetas tipografia -->
-    <link rel="stylesheet" href="./../estilos/style.css">
+    <!-- link de css bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="./../estilos/style.css">
     <title>Productos - Birroteca</title>
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="tituloPrincipal tituloMaquinaEstilo">Birroteca </h1>
-        <!-- etiqueta de menu/navegacion-->
-        <nav class="navegacion">
-            <!-- lista desordenada-->
-            <ul>
-                <li>  
-                    <a href="./../index.html"> Home </a>
-                </li>
-                <li>  
-                    <a href="./nosotros.html"> Nosotros </a>
-                </li>
-                <li>  
-                    <a href="./productos.html"> Productos </a>
-                </li>
-                <li>  
-                    <a href="./empresariales.html"> Empresariales </a>
-                </li>
-                <li>  
-                    <a href="./contacto.html"> Contacto </a>
-                </li>
-                <li class="menuHamburgesa">  
-                    <img src="./../img/icon-menu.png" alt="">
-                </li>
-            </ul>
-        </nav> 
+    <!-- encabezado: header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-light colorPrincipalFondo d-flex justify-content-beetwen ">
+            <div class="container-fluid d-flex justify-content-beetwen">
+              <h1 class="navbar-brand">Birroteca</h1>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav w-100 d-flex justify-content-end">
+                    <a class="nav-link activate" href="../index.html" aria-current="page">Home</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    <a class="nav-link" href="./empresariales.html">Empresariales</a>
+                    <a class="nav-link" href="./contacto.html">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
      <!-- contenido principal: main -->
      <main class="contenidoProductos">
@@ -49,69 +44,39 @@
             <div class="listadoBotella">
                 <div class="prod">
                     <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_942477-MLA44839755696_022021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$1000</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class=" prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Blue Moon</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_868500-MLA45294767382_032021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$1700</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Patagonia Amber</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_905709-MLA31725678607_082019-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$1650</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Miller</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_618122-MLA45118847565_032021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
-                        <button class="btn-shop">
-                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
-                        </button>
-                    </div>
-                </div>
-                <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                    <div class="footerProducto">
-                        <span>$200</span>
-                        <button class="btn-shop">
-                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
-                        </button>
-                    </div>
-                </div>
-                <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                    <div class="footerProducto">
-                        <span>$200</span>
-                        <button class="btn-shop">
-                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
-                        </button>
-                    </div>
-                </div>
-                <div class=" prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
-                    <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$2600</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
@@ -125,40 +90,80 @@
            <h2 class="tituloLatas">LATAS</h2>
            <div class="listadoLatas">
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Stella Artois</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_774996-MLA44839718966_022021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$1200</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Quilmes Clasica</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_960077-MLA44839776548_022021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$700</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Temple Wolf IPA</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_810097-MLA44839765447_022021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$915</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Brahma Chopp</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_640945-MLA44839805234_022021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$700</span>
+                        <button class="btn-shop">
+                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Andes Origen Rubia</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_718419-MLA44839770194_022021-V.webp" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$800</span>
+                        <button class="btn-shop">
+                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Patagonia Lager</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_978501-MLA44839773610_022021-V.webp" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$1100</span>
+                        <button class="btn-shop">
+                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Patagonia Weisse</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_922523-MLA44585651327_012021-V.webp" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$1100</span>
+                        <button class="btn-shop">
+                            <img src="./../img/miniShop.png" alt="" class="imgCarrito">
+                        </button>
+                    </div>
+                </div>
+                <div class="prod">
+                    <span style="padding-right: 4px; padding-left: 4px;">Miller</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_709351-MLA47762251337_102021-V.webp" alt="corona" class="imgProducto">
+                    <div class="footerProducto">
+                        <span>$900</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
@@ -172,40 +177,40 @@
             <h3 class="tituloPromociones">PROMOCIONES</h3>
             <div class="listadoPromociones">
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Grolsch + Amstel</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_849780-MLA47793518227_102021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$3500</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Salta</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_757796-MLA48763838723_012022-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$680</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Santa Fe Pilsen</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_705573-MLA46568960789_062021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$650</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
                     </div>
                 </div>
                 <div class="prod">
-                    <span style="padding-right: 4px; padding-left: 4px;">Corona</span>
-                    <img src="./../img/productos/botella-corona.jpg" alt="corona" class="imgProducto">
+                    <span style="padding-right: 4px; padding-left: 4px;">Heineken x 710cc</span>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_816546-MLA46845936229_072021-V.webp" alt="corona" class="imgProducto">
                     <div class="footerProducto">
-                        <span>$200</span>
+                        <span>$1400</span>
                         <button class="btn-shop">
                             <img src="./../img/miniShop.png" alt="" class="imgCarrito">
                         </button>
@@ -221,5 +226,8 @@
         <p>Av. Santa Fe 2000</p>
         <p>Rafaela, Satan Fe</p>
     </footer>
+
+    <!-- link de css bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

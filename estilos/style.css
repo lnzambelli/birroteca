@@ -14,38 +14,23 @@
     color: #000000;
 }
 
-.tituloPrincipal{
-    font-size: 20px;
-    display: inline-block;
-    margin-right: 20px;
+header{
+    background-color:  #fffaa8;
 }
 
-.navegacion{
-    display: inline-block;
-    z-index: 100;
-}
-
-.encabezado{
-    position: sticky;
-    padding: 4px 8px;
-    top: 0px;
-    background-color: #fffaa8;
-    height: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-a{
+.nav-link{
     text-decoration: none;
     padding-right: 8px;
     margin-left: 8px;
+    color: black;
 }
 
-li{
-    list-style: none;
-    display: inline;
+.nav-link:hover{
+  font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: black;
 }
 
 .piePagina{
@@ -58,36 +43,8 @@ li{
     font-size: 10px;
     text-align: center;
     padding: 2px;
+    margin-bottom: 0px;
 }
-
-a:hover{
-    font-weight: bold;
-    color: #fffaa8;
-    background-color: black;
-    padding: 4px;
-    border-radius: 20px;
-}
-
-.menuHamburgesa{
-    display: none;
-}
-
-.menuHamburgesa img{
-    width: 16px;
-    border: none;
-}
-
-@media (max-width: 600px) {
-
-    li{
-        display: none;
-    }
-
-    .menuHamburgesa{
-        display: inline-block;
-    }
-}
-
 
 .tituloMaquinaEstilo{
     display: block;
@@ -112,7 +69,7 @@ a:hover{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 40px 200px 40px 300px ;
+    grid-template-rows: auto 40px 200px 40px 600px ;
     grid-row-gap: 16px;
     justify-content: center;
     align-content: center;
@@ -125,7 +82,7 @@ a:hover{
 
 .fotoInicial{
     grid-area: fotoInicial;
-    max-height: 500px;
+    max-height: 400px;
     width: 100%;
 }
 
@@ -156,7 +113,7 @@ a:hover{
     grid-area: mapa;
     width: 100%;
     height: 100%;
-    max-height: 300px;
+    max-height: 600px;
     border: none;
 }
 
@@ -199,7 +156,7 @@ h2{
 
     .fotoInicial{
         grid-area: fotoInicial;
-        max-height: 500px;
+        max-height: 400px;
         width: 100%;
     }
     
@@ -251,7 +208,7 @@ h2{
 
     .fotoInicial{
         grid-area: fotoInicial;
-        max-height: 500px;
+        max-height: 400px;
         width: 100%;
         display: none;
     }
@@ -267,12 +224,14 @@ h2{
         text-align: center;
     }
 
-    section div{
+    .cardColor{
         background-color: #4e4c534d;
         padding-top: 8px;
         padding-bottom: 8px;
         border-radius: 10px;
         width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }   
 
     .img{
@@ -319,7 +278,7 @@ h2{
 
 .fotoInicialNos{
     grid-area: fotoInicialNos;
-    max-height: 500px;
+    max-height: 400px;
     width: 100%;
     border: none;
 }
@@ -772,7 +731,7 @@ h2{
 }
 
 .imgProducto{
-    width: 160px;
+    width: 150px;
     height: 160px;
 }
 
@@ -794,15 +753,15 @@ h2{
     padding: 4px;
     border-radius: 10px;
     font-weight: bold;
-    width: 20px;
+    width: 24px;
 }
 
 .imgCarrito:hover{
-    background-color: #fffaa8;
+    background-color: #ece216;
     padding: 4px;
     border-radius: 10px;
     font-weight: bold;
-    width: 20px;
+    width: 24px;
 }
 
 @media (max-width: 768px) {
@@ -898,7 +857,7 @@ h2{
     }
     
     .imgProducto{
-        width: 160px;
+        width: 150px;
         height: 160px;
     }
     
@@ -1025,7 +984,7 @@ h2{
     }
     
     .imgProducto{
-        width: 160px;
+        width: 150px;
         height: 160px;
     }
     
